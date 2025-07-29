@@ -46,3 +46,6 @@ npm run battle  # Simulate battles
 - RPC: https://sepolia.base.org
 - Explorer: https://sepolia.basescan.org
 - Faucet: https://portal.cdp.coinbase.com/products/faucet
+
+## 📋 Contract Addresses
+- Base Sepolia: TBD (deploy to get address)

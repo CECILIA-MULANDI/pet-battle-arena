@@ -37,17 +37,3 @@ main()
     console.error("❌ Deployment failed:", error);
     process.exit(1);
   });
-
-// Additional deployment utilities
-async function verifyContract(contractAddress, constructorArgs) {
-  console.log('🔍 Verifying contract on BaseScan...');
-  try {
-    await hre.run('verify:verify', {
-      address: contractAddress,
-      constructorArguments: constructorArgs,
-    });
-    console.log('✅ Contract verified successfully!');
-  } catch (error) {
-    console.log('❌ Verification failed:', error.message);
-  }
-}

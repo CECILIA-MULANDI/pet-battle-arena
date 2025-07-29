@@ -62,28 +62,3 @@ contract PetBattleArena is ERC721, Ownable {
         return ownerPets[owner];
     }
 }
-
-    function battle(uint256 attackerId, uint256 defenderId) public returns (bool) {
-        require(ownerOf(attackerId) == msg.sender, 'Not your pet!');
-        require(pets[attackerId].isAlive && pets[defenderId].isAlive, 'Dead pets cannot battle!');
-        
-        Pet storage attacker = pets[attackerId];
-        Pet storage defender = pets[defenderId];
-        
-        uint256 damage = calculateDamage(attacker, defender);
-        
-        if (defender.health <= damage) {
-            defender.isAlive = false;
-            attacker.experience += 50;
-            emit BattleResult(attackerId, defenderId, 50);
-            return true;
-        } else {
-            defender.health -= damage;
-            attacker.experience += 10;
-            return false;
-        }
-    }
-// Bug fix: 6
-// Rare pets: 7
-// Base Sepolia optimization: 10
-// Battle feature: 11

@@ -51,3 +51,4 @@ async function verifyContract(contractAddress, constructorArgs) {
     console.log('❌ Verification failed:', error.message);
   }
 }
+// Deployment optimization: 5

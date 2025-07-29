@@ -116,3 +116,4 @@ contract PetBattleArena is ERC721, Ownable {
 // Base Sepolia optimization: 80
 // Battle feature: 81
 // Bug fix: 86
+// Rare pets: 87

@@ -83,3 +83,4 @@ contract PetBattleArena is ERC721, Ownable {
             return false;
         }
     }
+// Bug fix: 6

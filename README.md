@@ -50,3 +50,4 @@ npm run battle  # Simulate battles
 ## 📋 Contract Addresses
 - Base Sepolia: TBD (deploy to get address)
 ## Feature 14
+## Feature 24

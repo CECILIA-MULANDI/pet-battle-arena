@@ -51,3 +51,4 @@ npm run battle  # Simulate battles
 - Base Sepolia: TBD (deploy to get address)
 ## Feature 14
 ## Feature 24
+## Feature 34
